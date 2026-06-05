@@ -17,10 +17,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
 
-from token_counter import TokenCounter
-from source_categorizer import SourceCategorizer
-from suggestion_engine import SuggestionEngine
-
+from context_monitor import TokenCounter, SourceCategorizer, SuggestionEngine
 server = Server("context-monitor")
 counter = TokenCounter()
 categorizer = SourceCategorizer()
